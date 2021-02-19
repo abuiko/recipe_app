@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile-container header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.mobile-container header input {
+    border: none;
+    background: rgb(238, 238, 238);
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+}
+
+.mobile-container header button {
+    border: none;
+    padding: 0.3rem 0.8rem;
+    background: rgb(238, 238, 238);
+    border-radius: 3px;
+}
