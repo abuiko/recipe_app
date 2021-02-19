@@ -19,7 +19,8 @@ img {
 
 .mobile-container header {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
+
 }
 
 .mobile-container header input {
@@ -47,6 +48,8 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 0rem;
+    background: rgb(239, 251, 255);
 }
 
 .fav-container h3 {
@@ -82,4 +85,53 @@ img {
 .fav-dishes span {
     font-size: 0.8rem;
     text-align: center;
+}
+
+.meals {
+    padding: 2rem;
+}
+
+.meal {
+
+    box-shadow: 0px 5px 10px rgb(146, 146, 146);
+    border-radius: 10px;
+}
+
+.meal-header {
+    position: relative;
+
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 15px;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.meal-header img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.meal-body {
+    padding: 1.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-body h4 {
+    font-weight: normal;
+}
+
+.meal-body button {
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
 }
