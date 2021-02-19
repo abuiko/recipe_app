@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="/styles.css">
     <title>Recipy App</title>
 </head>
+
 <body>
+    <div class="mobile-container">
+        <header>
+            <input type="text">
+            <button id="search">Search</button>
+        </header>
+        <div class="fav-container">
+            <h3>Favorite Meals</h3>
+            <ul>
+                <li><img src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg" alt="tortillas"><span>Tortillas</span></li>
+                <li><img src="https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg"
+                        alt="salmon"><span>Baked Salmon</span></li>
+                <li><img src="https://www.themealdb.com/images/media/meals/1525873040.jpg"
+                        alt="Prawns"><span>Prawns</span></li>
+            </ul>
+        </div>
+        <div class="meals">
+            <span class="random">
+                Random Recipe
+            </span>
+            <div class="meal">
+                <div class="meal-header">
+                    <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="">
+                </div>
+                <div class="meal-body">
+                    <h4>Pasta Salad</h4>
+                    <button>
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="/app.js"></script>
 </body>
+
 </html>
