@@ -36,11 +36,42 @@ function addMeal(mealData, random = false) {
         </div>
         <div class="meal-body">
             <h4>${mealData.strMeal}</h4>
-            <button>
-                <i class="far fa-heart"></i>
+            <button class="fav-btn">
+                <i class="fas fa-heart"></i>
+                
             </button>
         </div>
     `;
+    const btn = meal.querySelector('.meal-body .fav-btn');
+    btn.addEventListener('click', () => {
+        if (btn.classList.contains('active')) {
+            removeMealLS(mealData.idMeal);
+            btn.classList.remove('active');
+        } else {
+            addMealLS(mealData.idMeal);
+            btn.classList.add('active');
+        }
 
+    })
     meals.appendChild(meal);
+}
+
+
+function addMealLS(mealId) {
+    const mealIds = getMealLS();
+    localStorage.setItem('mealIds', JSON.stringify([...mealIds, mealId]));
+
+}
+
+function removeMealLS(mealId) {
+    const mealIds = getMealLS();
+    localStorage.setItem('mealIds', JSON.stringify(mealIds.filter(id => id !== mealId)));
+}
+
+function getMealLS() {
+    const mealIds = JSON.parse(localStorage.getItem('mealIds'));
+
+    return mealIds === null ? [] : mealIds;
+
+    // return mealIds;
 }

@@ -130,8 +130,13 @@ img {
     font-weight: normal;
 }
 
-.meal-body button {
+.meal-body .fav-btn {
     border: none;
     background: transparent;
     font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.fav-btn.active i {
+    color: red;
 }
